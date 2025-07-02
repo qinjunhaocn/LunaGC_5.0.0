@@ -1,10 +1,7 @@
 name: Java Gradle Project Build and Upload
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch: # 手动触发工作流
 
 jobs:
   build:
@@ -34,7 +31,7 @@ jobs:
       run: ./gradlew jar
 
     - name: Upload JAR file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: success()
       with:
         name: LunaGC-Jar
