@@ -31,4 +31,4 @@ jobs:
       if: success()
       with:
         name: LunaGC-Jar
-        path: ./LunaGC_5.0.0/*.jar
+        path: ./LunaGC_5.0.0/
