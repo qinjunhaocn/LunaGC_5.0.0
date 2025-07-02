@@ -11,7 +11,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
       with:
-        repository: https://github.com/qinjunhaocn/LunaGC_5.0.0.git
+        repository: qinjunhaocn/LunaGC_5.0.0
         ref: main
         token: ${{ secrets.ACCESS_TOKEN }}
 
